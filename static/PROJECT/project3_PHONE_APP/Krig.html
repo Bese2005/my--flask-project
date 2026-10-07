@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRIG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>KRIG</h1>
+
+    <div class="game">
+
+        <div class="player">
+            <h2>Spiller 1</h2>
+            <img id="card1"  src="Images/Kortstokk_bakside.png" class="card">
+            <p> Kort: <span id="count1"></span></p>
+           
+
+        </div>
+
+          <div class="player">
+            <h2>Spiller 2</h2>
+            <img id="card2"  src="Images/Kortstokk_bakside.png" class="card">
+            <p>Kort: <span id="count2"></span></p>
+            
+          </div>
+
+    </div>
+
+    <button onclick="playRound ()">Trekk Kort</button>
+
+    <h2 id="message"></h2>
+    
+    <p>Runde : <span id="round"></span></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

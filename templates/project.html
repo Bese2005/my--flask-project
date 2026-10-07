@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='BILDER/MOISE LOGO.svg') }}" alt="logo picture"  width="200px">
+        <ul>
+            <li> <a href="{{ url_for('home') }}" >Home</a></li>
+            <li> <a href="{{ url_for('om_meg') }}" >About me </a></li>
+            <li> <a href="{{ url_for('prosjekt') }}" class="active">Projects</a></li>
+            <li> <a href="{{ url_for('kontakt') }}">Contact </a></li>
+        </ul>
+
+    </nav>
+
+    </nav>
+
+    <section class="Projects">
+        <!-- project 1 -->
+
+        <div class="project">
+            <h2>Project 1:This project consists of different things made using  HTML and CSS</h2>
+            <p>This project have Oslo lacrosse, float and vertical menu</p>
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='PROJECT/project1_HTML_CSS/Lacrosse.png') }}"       alt="Lacrosse picture">
+                <img src="{{ url_for('static', filename='PROJECT/project1_HTML_CSS/Float.png') }}"          alt="Float picture ">
+                <img src="{{ url_for('static', filename='PROJECT/project1_HTML_CSS/Verical menu.png') }}"   alt="vertical menu ">
+
+            </div>
+
+        </div>
+
+        <!-- project 2 -->
+        <div class="project">
+            <h2>Project 2:This project consists of a logo made using Illustrator  </h2>
+            <p>This project consist of a basket ball and examples on how the logo can be used using photoshop </p>
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='PROJECT/project2_BASKET_LOGO/Basket.png') }}"   alt="Basket logo ">
+                <img src="{{ url_for('static', filename='PROJECT/project2_BASKET_LOGO/cap.png') }}"      alt="Basket cap ">
+                <img src="{{ url_for('static', filename='PROJECT/project2_BASKET_LOGO/bag.png') }}"      alt="Basket Bag ">
+
+            </div>
+        </div>
+
+        <!-- project 3 -->
+         <div class="project">
+            <h2>Project 3:This project consists of phone app made using Figma </h2>
+        <p>This phone app its an app that help people to quit smoking </p>
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='PROJECT/project3_PHONE_APP/Mobil app1.png') }}" alt="phone app first side ">
+                <img src="{{ url_for('static', filename='PROJECT/project3_PHONE_APP/Mobil app 2.png') }}" alt="phone app second side">
+                <iframe src="{{ url_for('static', filename='PROJECT/project3_PHONE_APP/Krig.html') }}" width="600px"  frameborder="0"></iframe>
+                
+
+            </div>
+
+         </div>
+
+
+
+        <!-- project 4  -->
+          
+         <div class="project">
+            <h2>Project 4:This project consists of pictures. </h2>
+            <p>The pictures were taken using a camera and edited them using photoshop</p>
+
+            <div class="project-images"> 
+
+                <img src="{{ url_for('static', filename='PROJECT/project4_FOTO/Apotek.jpg') }}" alt="picture taken in apotek ">
+                <img src="{{ url_for('static', filename='PROJECT/project4_FOTO/Bushes.jpg') }}" alt="picture taken in a bush ">
+                <img src="{{ url_for('static', filename='PROJECT/project4_FOTO/Garden.jpg') }}" alt="picture taken in a Garden">
+                
+
+            </div>
+
+         </div>
+       
+          <!-- project 5 -->
+           <div class="project">
+            <h2>Project 5:This project consists of Drift work</h2>
+            <p>The drift work consist of Info screen, spice work and kali linux </p>
+
+            <div class="project-images">
+                <img src="{{ url_for('static', filename='PROJECT/project5 _Drift/kali.png') }}" alt="kali linus picture">
+
+                <img src="{{ url_for('static', filename='PROJECT/project5 _Drift/spice-works.png') }}" alt="spice work picture">
+                <video width="600" height="400" src="{{ url_for('static', filename='PROJECT/project5 _Drift/Vålerenga.MOV') }}" controls></video>
+                  </div>
+
+                  </div>
+
+
+                  <!-- project 6 -->
+
+                  <div class="project"> 
+                    <h2>Project 6 : This project consists of Escpe room game, Card game and a virtual machine </h2>
+
+                <p> The games i made i used HTML,CSS and JavaScript and the virtual machine i used Hyper-v</p>
+
+                  
+                     <div class="project-images">
+                        <img src="{{ url_for('static', filename='PROJECT/project6_JavaScript/Escape -ROOM.png') }}" alt="">
+
+                        <img src="{{ url_for('static', filename='PROJECT/project6_JavaScript/KRIG.png') }}"alt="">
+                         
+                        <img src="{{ url_for('static', filename='PROJECT/project6_JavaScript/windows picture.png') }}" alt="">
+
+                         </div>
+
+                    </div>
+
+                   <!-- Project 7 -->
+
+                   <div class="project">
+                    <h2>Project 7: This project consists of videos </h2>
+                     <p>They are different videos two of them i edited them using premiere pro </p>
+
+                     <div class="project-images">
+
+                        <video width="700" height="400" src="{{ url_for('static', filename='PROJECT/project7_videos/Stop-Motion.mp4') }}" controls></video>
+                        <video width="700" height="400"  src="{{ url_for('static', filename='PROJECT/project7_videos/Besse_detail_vulkan_KunSkjermbruk.mp4') }}" controls></video>
+                        <video width="700" height="400" src="{{ url_for('static', filename='PROJECT/project7_videos/EKERBERG.MOV') }}" controls></video>
+
+                     </div>
+                   </div>
+            
+
+
+
+
+
+
+
+
+
+
+         
+
+    </section>
+    
+    
+
+</body>
+</html>

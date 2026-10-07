@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='BILDER/MOISE LOGO.svg') }}" alt="Logo picture" >
+        <ul>
+            <li> <a href="{{ url_for('home') }}" >Home</a></li>
+            <li> <a href="{{ url_for('om_meg') }}" >About me </a></li>
+            <li> <a href="{{ url_for('prosjekt') }}">Projects</a></li>
+            <li> <a href="{{ url_for('kontakt') }}" class="active">Contact</a></li>
+        </ul>
+
+    </nav>
+    
+    
+    <section class="contact-section">
+    <div class="contact-container">
+
+        <h2>Contact information</h2>
+
+        <div class="contact-info">
+            <p><strong>Name:</strong> Besse Mosise</p>
+            <p><strong>Email:</strong> besse@gmail.com</p>
+            <p><strong>Telefon:</strong> 0783463419</p>
+        </div>
+
+        <h2>Send me a message </h2>
+
+        <form class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Skriv navnet ditt">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Skriv e-posten din">
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Skriv meldingen din her"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+</section>
+
+
+</body>
+</html>

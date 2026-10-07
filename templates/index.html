@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='BILDER/MOISE LOGO.svg') }}" alt="Logo picture"  width="200px">
+        <ul>
+            <li> <a href="{{ url_for('home') }}" class="active">Home</a></li>
+            <li> <a href="{{ url_for('om_meg') }}" >About me</a></li>
+            <li> <a href="{{ url_for('prosjekt') }}">Projects</a></li>
+            <li> <a href="{{ url_for('kontakt') }}">Contact</a></li>
+        </ul>
+
+    </nav>
+    
+    <section class="hjem-section">
+
+        <div class="hjem-main">
+
+<img class="bilde" src=" {{ url_for('static', filename='BILDER/Bilde av meg.JPG') }}" alt=" profile picture" 
+
+width="250" class="bilde">
+        
+<h1>Hi, I am  <span> Besse</span></h1>
+
+        <p>Welcome to my portofolio website.
+            
+        </p>
+        <a href="{{ url_for('prosjekt') }}" class="btn"> <button class="ntb">SEE MY PROJECTS</button></a>
+    </div>
+    </section>
+
+
+        
+    
+     
+        
+
+    
+
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om meg</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="{{ url_for('static', filename='BILDER/MOISE LOGO.svg') }}" alt="Logo picture">
+        <ul>
+            <li> <a href="{{ url_for('home') }}">Home</a></li>
+            <li> <a href="{{ url_for('om_meg') }}"  class="active">About me </a></li>
+            <li> <a href="{{ url_for('prosjekt') }}">Projects</a></li>
+            <li> <a href="{{ url_for('kontakt') }}">Contact</a></li>
+        </ul>
+
+    </nav>
+    
+        
+
+    
+    <img class="picture" src="{{ url_for('static', filename='BILDER/picture.jpg') }}" alt=" picture of about me side  " width="200px">
+    <section class="">
+        <h2>About me </h2>
+    <p>Hi ! my name is  Besse and i study at KUBEN VGS. <br><br>
+        I like working with coding and design .Through this year i have learnt the use of  HTML,CSS, Photoshop, figma and illustrator 
+        <div class="skills">
+            <h3>My skills </h3>
+        <ul> 
+            <li>Webdesign with HTML og CSS</li>
+            <li>Logo creation </li>
+            <li>Designing figma and photoshop</li>
+        </ul>
+        </div>
+        <p>My goal is to continue to develop myself in technology and design, and use what i have learnt to create something meaningful.
+</p>
+    </section>
+    
+   
+    
+</body>
+</html>
